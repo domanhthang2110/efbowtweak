@@ -11,8 +11,9 @@ public class EFBowTweak
 {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "efbowtweak";
-    public EFBowTweak(FMLJavaModLoadingContext context)
+    public EFBowTweak()
     {
+        FMLJavaModLoadingContext context = FMLJavaModLoadingContext.get();
         context.registerConfig(ModConfig.Type.CLIENT, EFBowConfig.CONFIG, "efbowtweak.toml");
     }
 }
